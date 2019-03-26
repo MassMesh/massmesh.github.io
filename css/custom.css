@@ -53,7 +53,7 @@ footer p {
 }
 
 .bg-primary-alt {
-  background-image: url('images/background.png');
+  background-image: url('../images/background.png');
   background-size: cover;
 }
 
