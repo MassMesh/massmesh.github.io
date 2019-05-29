@@ -5,3 +5,7 @@ div.is-centered, figure.is-centered{
 p.is-centered, h1.is-centered, h2.is-centered, h3.is-centered{
   text-align: center;
 }
+
+#top-banner{
+  background-image: url(/images/background.png);
+}
