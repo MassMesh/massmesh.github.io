@@ -1,66 +1,13 @@
-:root {
-  --jumbotron-padding-y: 3rem;
+div.is-centered, figure.is-centered{
+  margin:0 auto;
 }
 
-html,body {
-  font-family: 'Spectral', serif;
+p.is-centered, h1.is-centered, h2.is-centered, h3.is-centered{
+  text-align: center;
 }
 
-.navbar-brand,h1,h2,h3,.h1,.h2,.h3 {
-  font-family: 'Cabin', sans-serif;
-}
-
-.jumbotron {
-  padding-top: var(--jumbotron-padding-y);
-  padding-bottom: var(--jumbotron-padding-y);
-  margin-bottom: 0;
-  background-color: #fff;
-}
-@media (min-width: 768px) {
-  .jumbotron {
-    padding-top: calc(var(--jumbotron-padding-y) * 2);
-    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
-  }
-}
-
-.jumbotron p:last-child {
-  margin-bottom: 0;
-}
-
-.jumbotron-heading {
-  font-weight: 300;
-}
-
-.jumbotron .container {
-  max-width: 40rem;
-}
-
-footer {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-footer p {
-  margin-bottom: .25rem;
-}
-
-.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
-
-.bg-primary {
-  background: #36D1DC;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.bg-primary-alt {
-  background-image: url('../images/background.png');
+#top-banner{
+  background-image: url(/images/background_backup.png);
   background-size: cover;
-}
-
-.nav-item {
-  margin-right: 14px;
-}
-
-.nav-link {
- font-family: 'Cabin', sans-serif;
+  background-position: center;
 }
