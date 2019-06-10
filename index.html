@@ -52,7 +52,29 @@
 
       <div class="container">
 
-        <div class="section" id="trifecta">
+        <section class="section">
+          <article class="message is-info">
+            <div class="message-header">
+              <p>Set The Internet Free, June 27!</p>
+              <button class="delete" aria-label="delete"></button>
+            </div>
+            <div class="message-body">
+              <figure class="image is-128x128 is-pulled-left">
+                <img src="/images/noun_Calendar_576541.svg" alt="">
+              </figure>
+              <p>Join us this <b>Monday, June 17th at Northeastern Crossing</b> for a network design workshop created by the <a href="https://www.alliedmedia.org/" class="has-text-link">Allied Media Project.</a></p>
+              <br>
+              <p>Community owned Internet is well within our grasp. Let's design a network together! When building networks, we want to shape the technology to fit our relationships rather than shape our relationships to fit the technology.</p>
+              <br>
+              <p>This activity will help us use what we already know about our neighborhoods to design a wireless network that links the people and places we want to connect. It will also help us get familiar with the different types of routers we can use to build our network.</p>
+            </div>
+            <div class="message-footer has-text-centered">
+              <a class="button is-primary" href="https://www.meetup.com/CommunityOwnershipLab/events/261819988/">RSVP</a>
+            </div>
+          </article>
+        </section>
+
+        <section class="section" id="trifecta">
           <div class="columns">
             <div class="column">
               <figure class="image is-128x128 is-centered">
@@ -73,7 +95,7 @@
               <h2 class="title is-centered">Secure Your Communications</h2>
             </div>
           </div>
-        </div>
+        </section>
 
         <section class="section" id="Overview">
           <div class="columns">
@@ -170,5 +192,15 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/esm/popper.min.js" integrity="sha256-tWDaEmVqcf3+EBjNCtfZSFaWGT++lmVJH9KY64BJU+U=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', () => {
+        (document.querySelectorAll('.message .delete') || []).forEach(($delete) => {
+          $notification = $delete.parentNode.parentNode.parentNode;
+          $delete.addEventListener('click', () => {
+            $notification.parentNode.removeChild($notification);
+          });
+        });
+      });
+    </script>
   </body>
 </html>
