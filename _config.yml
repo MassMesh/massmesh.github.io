@@ -16,5 +16,5 @@ github_username:  MassMesh
 
 # Build settings
 markdown: kramdown
-keep_files: [wiki, support, blog]
+keep_files: [wiki, support, blog, analytics]
 
