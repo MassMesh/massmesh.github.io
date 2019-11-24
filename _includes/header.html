@@ -2,15 +2,30 @@
   <div class="container">
     <div class="navbar-brand">
       <a class="navbar-item" href="#">Mass Mesh</a>
+      <a role="button" class="navbar-burger" data-target="navbarNav" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
     </div>
     <div class="navbar-menu" id="navbarNav">
       <div class="navbar-end">
-        <a class="navbar-item" href="https://massmesh.org/wiki/">Learn More</span></a>
+        <a class="navbar-item" href="https://massmesh.org/wiki/index.php?title=Contact_and_Meeting_Info">Local Meetings</a>
+        <a class="navbar-item" href="https://massmesh.org/wiki/">Documentation</a>
 	<!--<a class="navbar-item" href="https://massmesh.github.io/blog/">Blog</a>-->
 	<!--<a class="navbar-item" href="https://riot.im/app/#/group/+massmesh:matrix.org">Chat with Us</a>-->
       	<a class="navbar-item" href="https://lists.riseup.net/www/info/massmeshnet">Join the Mailing List</a>
-        <a class="navbar-item" href="https://massmesh.org/wiki/index.php?title=Contact_and_Meeting_Info">Join a Meeting</a>
       </div>
     </div>
   </div>
 </nav>
+<script type="text/javascript">
+  (function() {
+    var burger = document.querySelector('.navbar-burger');
+    var nav = document.querySelector('#'+burger.dataset.target);
+    burger.addEventListener('click', function(){
+      burger.classList.toggle('is-active');
+      nav.classList.toggle('is-active');
+    });
+  })();
+</script>
