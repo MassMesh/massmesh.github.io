@@ -18,3 +18,5 @@ github_username:  MassMesh
 markdown: kramdown
 keep_files: [wiki, support, blog, analytics]
 
+sass:
+  sass_dir: _sass
