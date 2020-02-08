@@ -1,5 +1,4 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
 
@@ -14,11 +13,15 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #00e3ff;
+$blue: #00e3ff;
+$pink: #ef62f8;
+$green: #52f182;
 
-$link: #00e3ff;
+$text-color:       #111;
+$background-color: #fafafa;
+$brand-color:      $blue;
+
+$link-hover: $green;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
