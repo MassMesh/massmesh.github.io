@@ -11,3 +11,8 @@ p.is-centered, h1.is-centered, h2.is-centered, h3.is-centered{
   background-size: cover;
   background-position: center;
 }
+
+.body-img{
+  float:right;
+  margin:7px;
+}
