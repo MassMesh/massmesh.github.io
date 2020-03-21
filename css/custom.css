@@ -14,5 +14,6 @@ p.is-centered, h1.is-centered, h2.is-centered, h3.is-centered{
 
 .body-img{
   float:right;
+  max-width: 500px;
   margin:7px;
 }
