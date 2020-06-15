@@ -1,0 +1,144 @@
+---
+layout: default
+---
+
+<link href="bower_components/c3/c3.css" rel="stylesheet">
+<main role="main">
+    <section class="hero is-primary is-medium" id="top-banner">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title has-text-weight-bold">Our Network Stats</h1>
+            <h2 class="subtitle">We're piloting our technology in various neighborhoods around Boston. Take a look at our progress here.</h2>
+          </div>
+        </div>
+        <div class="hero-foot has-background-dark">
+          <div class="container">
+            <p><span class="has-text-weight-bold">* Not living in Massachusetts?</span> Find your nearest community-owned network on
+              <a class="has-text-link" href="https://jointhemesh.net">Join The Mesh (dot) Net</a>.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+          <div class="container">
+              <h1 class="title">Secure Access Points</h1>
+              <h2 class="subtitle">Number of secure access points deployed in the wild.</h2>
+              <p>We deploy secure wireless hotspots that allow access to the Yggdrasil network and the Internet (through a gateway.) This chart shows our progress since January 2020.</p>
+              <div id="secure-access-points"></div>
+          </div>
+      </section>
+
+        <section class="section">
+            <div class="container">
+                <h1 class="title">Cambridge Port Neighborhood Network</h1>
+                <h2 class="subtitle">Our progress on key metrics in Cambridge Port.</h2>
+                <p>These metrics show our progress toward the milestones in our 3-Phase <a href="https://share.mayfirst.org/s/bz9tEZDaorapBjA"> Cambridge Port Implementation Plan.</a></p>
+                <div class="columns">
+                    <div class="column">
+                        <div id="camb-port-test-sites"></div>
+                    </div>
+                    <div class="column">
+                        <div id="camb-port-volunteers"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+</main>
+
+<script src="bower_components/d3/d3.min.js"></script>
+<script src="bower_components/c3/c3.min.js"></script>
+
+<script> //Secure Access Points
+    var chart = c3.generate({
+        bindto: '#secure-access-points',
+        data: {
+            x: 'x',
+            columns: [
+                ['x', '2020-01-01', '2020-02-01', '2020-03-01', '2020-04-01', '2020-05-01', '2020-06-01'],
+                ['Access Points', 2, 2, 3, 3, 4, 5],
+            ],
+            type: 'bar',
+            labels: true,
+            colors: {
+                'Access Points': "#52f182"
+            }
+        },
+        grid: {
+            y: {
+                lines: [
+                    {value: 10, text: 'Goal for 2020'}
+                ]
+            }
+        },
+        axis: {
+            x: {
+                type: 'timeseries',
+                tick: {
+                    format: '%Y-%m'
+                }
+            },
+            y: {
+                min: 0,
+                max: 15,
+                padding: {
+                    top: 0,
+                    bottom: 0
+                }
+            }
+        }
+    });
+</script>
+
+<script> //Cambridge Port Volunteers
+    var chart = c3.generate({
+    bindto: '#camb-port-test-sites',
+    data: {
+      columns: [
+        ['Test Sites', 0]
+      ],
+      type: 'gauge'
+    },
+    gauge: {
+    max: 3,
+    units: '',
+    },
+    color: {
+        pattern: ['#FF0000', '#F97600', '#F6C600', '#60B044'], // the three color levels for the percentage values.
+        threshold: {
+            unit: 'value', // percentage is default
+            max: 3, // 100 is default
+            values: [0, 1, 2, 3]
+        }
+    },
+    size: {
+        height: 180
+    }
+});
+</script>
+
+<script> //Cambridge Port Volunteers
+    var chart = c3.generate({
+    bindto: '#camb-port-volunteers',
+    data: {
+      columns: [
+        ['Volunteers', 6]
+      ],
+      type: 'gauge'
+    },
+    gauge: {
+    max: 15,
+    units: '',
+    },
+    color: {
+        pattern: ['#FF0000', '#F97600', '#F6C600', '#60B044'], // the three color levels for the percentage values.
+        threshold: {
+            unit: 'value', // percentage is default
+            max: 15, // 100 is default
+            values: [0, 5, 10, 15]
+        }
+    },
+    size: {
+        height: 180
+    }
+});
+</script>

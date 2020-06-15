@@ -1,0 +1,20 @@
+{
+  "name": "massmesh.github.io",
+  "homepage": "https://github.com/MassMesh/massmesh.github.io",
+  "authors": [
+    "JamesVorder <james@bip44.email>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "GPL",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "c3": "^0.7.17"
+  }
+}
