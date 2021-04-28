@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="1">
+        <Placemark id="3">
+            <name>W Canton St</name>
+            <Point id="2">
+                <coordinates>-71.0773,42.3452,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="5">
+            <name>Albion St</name>
+            <Point id="4">
+                <coordinates>-71.1034,42.3902,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="7">
+            <name>Babcock St</name>
+            <Point id="6">
+                <coordinates>-71.1219,42.3529,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="9">
+            <name>Foster St</name>
+            <Point id="8">
+                <coordinates>-71.1294,42.3761,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="11">
+            <name>Summit Ave</name>
+            <Point id="10">
+                <coordinates>-71.0262,42.4015,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="13">
+            <name>Windsor St</name>
+            <Point id="12">
+                <coordinates>-71.0962,42.3653,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="15">
+            <name>Morrisey Blvd</name>
+            <Point id="14">
+                <coordinates>-71.037,42.3129,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="17">
+            <name>Highland Ave</name>
+            <Point id="16">
+                <coordinates>-71.0944,42.3858,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>
