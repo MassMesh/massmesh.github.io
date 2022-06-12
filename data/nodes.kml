@@ -37,10 +37,22 @@
                 <coordinates>-71.037,42.3129,0.0</coordinates>
             </Point>
         </Placemark>
-        <Placemark id="17">
-            <name>Highland Ave</name>
-            <Point id="16">
-                <coordinates>-71.0944,42.3858,0.0</coordinates>
+        <Placemark id="19">
+            <name>White Place</name>
+            <Point id="18">
+                <coordinates>-71.1621,42.3790,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="21">
+            <name>Moore Street</name>
+            <Point id="20">
+                <coordinates>-71.1277,42.4017,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="23">
+            <name>Edison Street</name>
+            <Point id="22">
+                <coordinates>-71.9852,42.2506,0.0</coordinates>
             </Point>
         </Placemark>
     </Document>
