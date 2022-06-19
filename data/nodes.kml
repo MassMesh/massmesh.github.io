@@ -38,21 +38,21 @@
             </Point>
         </Placemark>
         <Placemark id="19">
-            <name>White Place</name>
+            <name>White Place (Belmont)</name>
             <Point id="18">
                 <coordinates>-71.1621,42.3790,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="21">
-            <name>Moore Street</name>
+            <name>Moore Street (Somerville)</name>
             <Point id="20">
                 <coordinates>-71.1277,42.4017,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="23">
-            <name>Edison Street</name>
+            <name>Edison Street (Quincy)</name>
             <Point id="22">
-                <coordinates>-71.9852,42.2506,0.0</coordinates>
+                <coordinates>-70.9852,42.2506,0.0</coordinates>
             </Point>
         </Placemark>
     </Document>
